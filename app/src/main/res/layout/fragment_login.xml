@@ -1,0 +1,232 @@
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ninexe.ui.fragments.LoginFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/register_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/socialLoginLayout"
+            android:background="@drawable/light_blue_gradient">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:src="@drawable/back_icn"
+                android:visibility="gone" />
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                android:id="@+id/btn_skip"
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="@string/skip" />
+
+            <ImageView
+                android:id="@+id/ninexe_logo"
+                android:paddingTop="50dp"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:paddingBottom="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/header_logo" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/socialLoginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/facebook"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/facebook_blue"
+                android:padding="25dp"
+                android:src="@drawable/icn_fb" />
+
+            <ImageView
+                android:id="@+id/twitter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/twitter_blue"
+                android:padding="25dp"
+                android:src="@drawable/icn_twitter" />
+
+            <ImageView
+                android:id="@+id/google_plus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/google_plus_orange"
+                android:padding="25dp"
+                android:src="@drawable/icn_google_plus" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/socialLoginLayout"
+            android:background="@drawable/dark_blue_gradient"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                style="@style/Text.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/loginLayout"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:text="@string/or"
+                custom:typefaceAsset="fonts/OpenSans-Light.ttf" />
+
+            <ScrollView
+                android:id="@+id/loginLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fillViewport="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:descendantFocusability="beforeDescendants"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <com.ninexe.ui.widgets.AnyFontEditText
+                        android:id="@+id/emailField"
+                        style="@style/Text.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/username"
+                        android:drawablePadding="@dimen/padding_20"
+                        android:drawableStart="@drawable/username"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/padding_10"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/edittext_hint_white"
+                        android:textCursorDrawable="@drawable/color_cursor_white"
+                        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:layout_marginRight="@dimen/padding_10"
+                        android:background="@color/white" />
+
+                    <com.ninexe.ui.widgets.AnyFontEditText
+                        android:id="@+id/passwordField"
+                        style="@style/Text.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/password"
+                        android:drawablePadding="@dimen/padding_20"
+                        android:drawableStart="@drawable/password"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/padding_10"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/edittext_hint_white"
+                        android:textCursorDrawable="@drawable/color_cursor_white"
+                        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:layout_marginRight="@dimen/padding_10"
+                        android:background="@color/white" />
+                </LinearLayout>
+            </ScrollView>
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                android:id="@+id/forgotPassword"
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/loginLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/forgot_password"
+                android:textColor="@color/blue_text"
+                custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/register_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dark_blue"
+        android:orientation="horizontal">
+
+        <com.ninexe.ui.widgets.AnyFontButtonView
+            android:id="@+id/btn_register"
+            style="@style/ButtonWithBlueSolid"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:padding="@dimen/padding_20"
+            android:text="@string/register"
+            custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+        <com.ninexe.ui.widgets.AnyFontButtonView
+            android:id="@+id/btn_sign_in"
+            style="@style/ButtonWithBlueSolid"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_20"
+            android:text="@string/sign_in"
+            custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+    </LinearLayout>
+
+    <include layout="@layout/retry_layout" />
+
+</RelativeLayout>

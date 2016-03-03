@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mediumLightGrey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_20"
+        android:orientation="horizontal">
+
+        <com.ninexe.ui.widgets.AnyFontTextView
+            android:id="@+id/siNo"
+            style="@style/Text.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1."
+            android:textColor="@color/edittext_hint_white"
+            custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+        <com.ninexe.ui.widgets.AnyFontTextView
+            android:id="@+id/pollText"
+            style="@style/Text.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sdgfd fbdf"
+            custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/poll_item_background"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:id="@+id/pollBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:background="@drawable/poll_item_progress_background"
+                android:gravity="right|end"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+        <com.ninexe.ui.widgets.AnyFontTextView
+            android:id="@+id/pollResult"
+            style="@style/Text.Very.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_10"
+            android:singleLine="true"
+            android:text="15%"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            custom:typefaceAsset="fonts/OpenSans-Bold.ttf" />
+    </RelativeLayout>
+
+</LinearLayout>

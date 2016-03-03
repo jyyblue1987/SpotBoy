@@ -1,0 +1,277 @@
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ninexe.ui.fragments.RegisterFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_register"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/light_blue_gradient">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/padding_10"
+                android:src="@drawable/back_icn" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/header_logo" />
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimaryBlue"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/set_profile_pic"
+                android:textColor="@color/white"
+                custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/dark_blue_gradient">
+
+            <LinearLayout
+                android:id="@+id/ImageChooseLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/dark_blue"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:padding="@dimen/padding_10">
+
+                <ImageView
+                    android:id="@+id/camera"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginEnd="0.5dp"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_10"
+                    android:src="@drawable/camera_icn_grey" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/light_grey" />
+
+                <ImageView
+                    android:id="@+id/gallery"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginEnd="0.5dp"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_10"
+                    android:src="@drawable/gallery_icn" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ImageChooseLayout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ImageChooseLayout"
+                    android:orientation="vertical">
+
+                    <com.ninexe.ui.widgets.AnyFontEditText
+                        android:id="@+id/nameField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/username"
+                        android:drawablePadding="@dimen/padding_20"
+                        android:drawableStart="@drawable/username"
+                        android:hint="@string/name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:nextFocusForward="@+id/passwordField"
+                        android:padding="@dimen/padding_10"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/edittext_hint_white"
+                        android:textCursorDrawable="@drawable/color_cursor_white"
+                        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="@dimen/padding_10"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:layout_marginRight="@dimen/padding_10"
+                        android:background="@color/white" />
+
+                    <com.ninexe.ui.widgets.AnyFontEditText
+                        android:id="@+id/passwordField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/password"
+                        android:drawablePadding="@dimen/padding_20"
+                        android:drawableStart="@drawable/password"
+                        android:hint="@string/password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:nextFocusForward="@+id/emailField"
+                        android:padding="@dimen/padding_10"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/edittext_hint_white"
+                        android:textCursorDrawable="@drawable/color_cursor_white"
+                        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="@dimen/padding_10"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:layout_marginRight="@dimen/padding_10"
+                        android:background="@color/white" />
+
+                    <com.ninexe.ui.widgets.AnyFontEditText
+                        android:id="@+id/emailField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/email"
+                        android:drawablePadding="@dimen/padding_20"
+                        android:drawableStart="@drawable/email"
+                        android:hint="@string/email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:nextFocusForward="@+id/mobileNumField"
+                        android:padding="@dimen/padding_10"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/edittext_hint_white"
+                        android:textCursorDrawable="@drawable/color_cursor_white"
+                        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="@dimen/padding_10"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:layout_marginRight="@dimen/padding_10"
+                        android:background="@color/white" />
+
+                    <com.ninexe.ui.widgets.AnyFontEditText
+                        android:id="@+id/mobileNumField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/mobile_number"
+                        android:drawablePadding="@dimen/padding_20"
+                        android:drawableStart="@drawable/mobile_number"
+                        android:hint="@string/mobile_number"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="@dimen/padding_10"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/edittext_hint_white"
+                        android:textCursorDrawable="@drawable/color_cursor_white"
+                        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="@dimen/padding_10"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:layout_marginRight="@dimen/padding_10"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_10"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/btn_toggle"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/selector_notification_settings_toggle"
+                            android:textOff=""
+                            android:textOn="" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.ninexe.ui.widgets.AnyFontTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding_10"
+                                android:text="@string/agree_terms"
+                                android:textColor="@color/white"
+                                custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+                            <com.ninexe.ui.widgets.AnyFontTextView
+                                android:id="@+id/tac"
+                                style="@style/Text.Small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/terms_conditions"
+                                android:textColor="@color/white"
+                                custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <com.ninexe.ui.widgets.AnyFontButtonView
+        android:id="@+id/btn_register"
+        style="@style/ButtonWithBlueSolid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/padding_20"
+        android:text="@string/register"
+        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+    <include layout="@layout/retry_layout" />
+
+</RelativeLayout>

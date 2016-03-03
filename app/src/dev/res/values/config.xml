@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<resources>
+    <string name="app_name">Spotboye</string>
+
+    <!-- API End Point-->
+    <string name="base_url">http://dev.spotboye.com/api/v1</string>
+    <!--<string name="base_url">http://192.168.2.1:8080</string>
+-->
+    <!-- Facebook-->
+    <string name="facebook_app_id">713346462131169</string>
+
+    <!-- Twitter -->
+    <string name="twitter_app_id">9HcHtFLryNFRG5k7eQreeavtr</string>
+    <string name="twitter_consumer_key">9HcHtFLryNFRG5k7eQreeavtr</string>
+    <string name="twitter_consumer_secret">0jFUCcq84zMjdQMN9aDScqEEfa0S5QWIb5YOPAuGwkvyIEi7t0</string>
+
+    <!--JW Player-->
+    <string name="jw_player_key">sZq+OSbrcG3ZN0v2Wx4GIxApDgCmTCGRt168ww==</string>
+
+    <!--Flurry Analytics-->
+    <string name="flurry_api_key">MPQCZTVT39YKPZRCCFQ4</string>
+
+    <!--Google Analytics-->
+    <string name="google_analytics_property_id">UA-69815103-1</string>
+
+    <!-- AdMob-->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <bool name="isProduction">false</bool>
+
+</resources>

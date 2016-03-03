@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="20dp">
+
+    <FrameLayout
+        android:id="@+id/right_btn_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <ToggleButton
+            android:id="@+id/btn_toggle"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textOff=""
+            android:textOn=""
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btn_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_icn"
+            android:background="@null"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+    <com.ninexe.ui.widgets.AnyFontTextView
+        android:id="@+id/title"
+        style="@style/Text.Medium"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/right_btn_container"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_news_letter"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                style="@style/Text.Medium"
+                android:text="News Letter"
+                android:visibility="gone"
+                custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.9"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/newsletter_icn" />
+
+
+                <com.ninexe.ui.widgets.AnyFontTextView
+                    style="@style/Text.Very.Large"
+                    android:layout_marginTop="20dp"
+                    android:text="News Letter"
+                    custom:typefaceAsset="fonts/OpenSans-Bold.ttf" />
+
+                <com.ninexe.ui.widgets.AnyFontTextView
+                    style="@style/Text.Medium"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Enter your email address below to receive occasional updates"
+                    custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+                <RelativeLayout
+                    android:id="@+id/emailLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/background_news_letter_email"
+                    android:descendantFocusability="beforeDescendants"
+                    android:focusableInTouchMode="true">
+
+                    <EditText
+                        android:id="@+id/emailField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="@string/enter_email_address"
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/edittext_hint_white" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/btnSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/send_icn" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:visibility="visible">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<resources>
+
+    <!-- comment-->
+    <integer name="comment_max_length">140</integer>
+
+    <!-- webView text size-->
+    <integer name="web_view_text_size_80">80</integer>
+    <integer name="web_view_text_size_90">90</integer>
+    <integer name="web_view_text_size_100">100</integer>
+    <integer name="web_view_text_size_110">110</integer>
+    <integer name="web_view_text_size_120">120</integer>
+
+    <!-- number of grids-->
+    <integer name="number_of_grids">2</integer>
+
+</resources>

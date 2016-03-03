@@ -1,0 +1,136 @@
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+
+    <style name="BlueTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+
+    <style name="RedTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+
+
+    <!-- Styles for toolbar -->
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Styles for textview -->
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">1dp</item>
+    </style>
+
+    <style name="Text.Very.Large" parent="Text">
+        <item name="android:textSize">@dimen/text_very_large</item>
+    </style>
+
+    <style name="Text.Large" parent="Text">
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="Text.Medium" parent="Text">
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="Text.Small" parent="Text">
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="Text.Very.Small" parent="Text">
+        <item name="android:textSize">@dimen/text_very_small</item>
+    </style>
+
+    <style name="Text.Very.Very.Small" parent="Text">
+        <item name="android:textSize">@dimen/text_very_very_small</item>
+    </style>
+
+    <!-- Styles for Buttons -->
+    <style name="ButtonWithBlueSolid">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_text_btn_blue</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+    </style>
+
+    <!-- Styles for Article Text Divider -->
+    <style name="Article.Text.Divider.Vertical" parent="android:Widget">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+
+    <!-- Styles related to Splash Screen -->
+    <style name="Theme.Splash" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/background_splash_screen</item>
+    </style>
+
+    <!-- Transparent style for Search Activity-->
+    <style name="Theme.AppCompat.Translucent" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <!-- Style search -->
+    <style name="MSV_ImageButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+
+    <!-- Style for TextSize -->
+    <style name="Text.TextSize" parent="android:Widget">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@drawable/textsize_text_color_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/background_text_size_text</item>
+        <item name="android:text">aA</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for CustomTabLayout -->
+    <style name="CustomTabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        ...
+    </style>
+
+</resources>

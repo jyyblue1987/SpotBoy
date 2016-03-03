@@ -1,0 +1,120 @@
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mediumLightGrey"
+    tools:context="com.ninexe.ui.fragments.QuizResultFragment">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.ninexe.ui.widgets.AnyFontTextView
+                    android:id="@+id/quizTitle"
+                    style="@style/Text.Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_10"
+                    android:text="Title Title Title Title Title Title Title  ?"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_20">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/shareIcn"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:background="@drawable/white_rectangle">
+
+                <com.ninexe.ui.widgets.AnyFontTextView
+                    android:id="@+id/points"
+                    style="@style/Text.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/padding_10"
+                    android:text="Points"
+                    android:textColor="@color/black"
+                    custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/points"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:background="#D3D3D3" />
+
+                <ScrollView
+
+                    android:id="@+id/descriptionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/divider">
+
+                    <com.ninexe.ui.widgets.AnyFontTextView
+                        android:id="@+id/description"
+                        style="@style/Text.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_10"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/padding_10"
+                        android:text="fdsf"
+                        android:textColor="@color/black"
+                        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+                </ScrollView>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/shareIcn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/share_icn_normal" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

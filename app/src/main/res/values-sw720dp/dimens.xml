@@ -1,0 +1,44 @@
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<resources>
+
+
+    <!-- Font Size Text -->
+    <dimen name="text_very_large">32dp</dimen>
+    <dimen name="text_large">28dp</dimen>
+    <dimen name="text_medium">22dp</dimen>
+    <dimen name="text_small">18dp</dimen>
+    <dimen name="text_very_small">16dp</dimen>
+    <dimen name="text_very_very_small">12dp</dimen>
+
+    <!-- Featured Article -->
+    <dimen name="featured_article_thumbnail_height">450dp</dimen>
+
+    <!-- Article Detail-->
+    <dimen name="article_detail_video_thumbnail_height">@dimen/featured_article_thumbnail_height
+    </dimen>
+    <dimen name="related_article_height">250dp</dimen>
+
+    <!--Recent Article-->
+    <dimen name="recent_article_thumbnail_height">110dp</dimen>
+    <dimen name="recent_article_thumbnail_width">140dp</dimen>
+
+    <!-- Tab Layout -->
+    <dimen name="tab_text_size">140dp</dimen>
+
+    <!--Photo Gallery-->
+    <dimen name="photo_gallery_viewpager_width">400dp</dimen>
+    <dimen name="photo_gallery_viewpager_height">380dp</dimen>
+    <dimen name="photo_gallery_title_container_height">140dp</dimen>
+
+    <!-- Navigation Drawer Width-->
+    <item name="navigation_drawer_width" format="float" type="dimen">0.55</item>
+
+    <!-- Cover Flow-->
+    <dimen name="cover_width">470dp</dimen>
+    <dimen name="cover_height">450dp</dimen>
+
+</resources>

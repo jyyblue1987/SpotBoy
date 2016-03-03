@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notification_settings_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="20dp">
+
+    <com.ninexe.ui.widgets.ProgramaticallyCheckabeToggle
+        android:id="@+id/btn_toggle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selector_notification_settings_toggle"
+        android:textOff=""
+        android:textOn="" />
+
+
+    <com.ninexe.ui.widgets.AnyFontTextView
+        android:id="@+id/title"
+        style="@style/Text.Medium"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+    <com.ninexe.ui.widgets.AnyFontTextView
+        android:id="@+id/dnd_time"
+        style="@style/Text.Small"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/title"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingRight="5dp"
+        android:textColor="@color/white"
+        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+
+</RelativeLayout>

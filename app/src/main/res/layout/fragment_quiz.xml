@@ -1,0 +1,170 @@
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mediumLightGrey"
+    tools:context="com.ninexe.ui.fragments.QuizFragment">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/progress_layout"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.ninexe.ui.widgets.AnyFontTextView
+                    android:id="@+id/quizTitle"
+                    style="@style/Text.Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_10"
+                    android:text="Title Title Title Title Title Title Title  ?"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/progress_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_20"
+                android:layout_alignParentBottom="true"
+                android:background="@color/grey"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/progressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="?attr/colorPrimary"
+                    android:gravity="right">
+
+                    <com.ninexe.ui.widgets.AnyFontTextView
+                        android:id="@+id/answered_count"
+                        style="@style/Text.Very.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.ninexe.ui.widgets.AnyFontTextView
+                        style="@style/Text.Very.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/" />
+
+                    <com.ninexe.ui.widgets.AnyFontTextView
+                        android:id="@+id/totalCount"
+                        style="@style/Text.Very.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/mediumLightGrey">
+
+            <com.ninexe.ui.widgets.AnyFontButtonView
+                android:id="@+id/attemptedText"
+                style="@style/Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="dvgsdgsdg"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/questionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <com.ninexe.ui.widgets.AnyFontTextView
+                        android:id="@+id/q"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/left_curved_rectangle"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Q"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <com.ninexe.ui.widgets.AnyFontTextView
+                    android:id="@+id/questionText"
+                    style="@style/Text.Medium"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:background="@drawable/right_curved_rectangle"
+                    android:gravity="center"
+                    android:text="devns;dn sdbvlsdfbv sudbvhl devns;dn sdbvlsdfbv sudbvhl?    "
+                    custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/options_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/questionLayout"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:fadeScrollbars="false"
+                android:paddingBottom="5dp"
+                android:scrollbarThumbVertical="@drawable/scrollbar_white"
+                android:scrollbars="vertical" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/retry_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout" />
+
+</RelativeLayout>

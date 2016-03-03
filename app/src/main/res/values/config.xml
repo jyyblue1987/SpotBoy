@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<resources>
+
+<!--    &lt;!&ndash; Used for Internal Build &ndash;&gt;
+    <string name="base_url">http://10.10.35.167:9090</string>-->
+
+<!--    &lt;!&ndash; Used for Customer Build &ndash;&gt;
+    <string name="base_url">http://nixon.robosoftin.com:10010</string>-->
+
+    <!-- Used for Customer Build -->
+    <string name="base_url">http://dev.spotboye.com/api/v1</string>
+
+    <!-- Used for Dev -->
+   <!-- <string name="base_url">http://10.10.35.66:8080</string>-->
+
+</resources>

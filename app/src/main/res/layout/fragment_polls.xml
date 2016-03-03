@@ -1,0 +1,82 @@
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mediumLightGrey"
+    tools:context="com.ninexe.ui.fragments.PollsFragment">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_10">
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                android:id="@+id/questionText"
+                style="@style/Text.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/options_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/goBtnLayout"
+                android:layout_below="@+id/questionText"
+                android:fadeScrollbars="false"
+                android:paddingBottom="@dimen/padding_10"
+                android:paddingTop="5dp"
+                android:scrollbarThumbVertical="@drawable/scrollbar_white"
+                android:scrollbars="vertical" />
+
+            <LinearLayout
+                android:id="@+id/goBtnLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:weightSum="3">
+
+                <com.ninexe.ui.widgets.AnyFontButtonView
+                    android:id="@+id/goBtn"
+                    style="@style/ButtonWithBlueSolid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/colorPrimary"
+                    android:text="@string/go" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/retry_layout" />
+
+</RelativeLayout>

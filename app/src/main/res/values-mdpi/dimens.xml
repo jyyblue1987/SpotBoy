@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<resources>
+
+    <!-- Font Size Text -->
+    <dimen name="text_very_large">26dp</dimen>
+    <dimen name="text_large">22dp</dimen>
+    <dimen name="text_medium">16dp</dimen>
+    <dimen name="text_small">14dp</dimen>
+    <dimen name="text_very_small">12dp</dimen>
+    <dimen name="text_very_very_small">8dp</dimen>
+
+    <!-- Cover Flow-->
+    <dimen name="cover_width">170dp</dimen>
+    <dimen name="cover_height">120dp</dimen>
+
+</resources>

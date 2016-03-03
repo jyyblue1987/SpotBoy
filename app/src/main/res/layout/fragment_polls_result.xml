@@ -1,0 +1,59 @@
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mediumLightGrey"
+    tools:context="com.ninexe.ui.fragments.PollsResultFragment">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/pollCoverImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_10">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/poll_result_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/shareIcn"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:fadeScrollbars="false"
+                android:scrollbarThumbVertical="@drawable/scrollbar_white"
+                android:scrollbars="vertical" />
+
+            <ImageView
+                android:id="@+id/shareIcn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/share_icn_normal" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

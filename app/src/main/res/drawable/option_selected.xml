@@ -1,0 +1,17 @@
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/yellow_trans"></solid>
+            <corners android:radius="25dp" />
+
+            <stroke
+                android:width="5px"
+                android:color="@color/yellow" />
+        </shape>
+    </item>
+</layer-list>

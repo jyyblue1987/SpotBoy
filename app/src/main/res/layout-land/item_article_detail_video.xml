@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.longtailvideo.jwplayer.JWPlayerView
+        xmlns:jwp="http://schemas.android.com/apk/res-lib/com.ninexe.ui"
+        android:id="@+id/jwplayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        jwp:controls="true"
+        jwp:controlsQuality="true"
+        jwp:jw_logo="false" />
+
+</LinearLayout>

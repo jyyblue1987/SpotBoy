@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<com.ninexe.ui.widgets.AnyFontTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/related_article_text"
+    style="@style/Text.Medium"
+    android:textSize="20sp"
+    android:layout_marginLeft="10dp"
+    android:textAllCaps="true"
+    android:textColor="@color/white"
+    custom:typefaceAsset="fonts/OpenSans-Semibold.ttf" />

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_background_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="18dp"
+            android:src="@drawable/ninexe_logo" />
+
+
+        <com.ninexe.ui.widgets.AnyFontTextView
+            android:id="@+id/welcome_text_1"
+            style="@style/Text.Medium"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="3dp"
+            android:text="@string/welcome_screen_1_text"
+            android:textAllCaps="true"
+            custom:typefaceAsset="fonts/Montserrat-Regular.otf" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:src="@drawable/welcome_screen_logo" />
+
+        <com.ninexe.ui.widgets.AnyFontTextView
+            android:id="@+id/welcome_text_1_2"
+            style="@style/Text.Medium"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:singleLine="false"
+            android:text="@string/welcome_screen_1_2_text"
+            custom:typefaceAsset="fonts/Montserrat-Regular.otf" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/mediumLightGrey" android:state_pressed="true" />
+    <item android:color="@color/mediumLightGrey" android:state_selected="true" />
+    <item android:color="#EEE2CB" />
+</selector>

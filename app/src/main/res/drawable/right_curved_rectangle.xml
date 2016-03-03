@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/question_grey" />
+            <corners android:bottomLeftRadius="0.1dp" android:bottomRightRadius="5dp" android:topLeftRadius="0.1dp" android:topRightRadius="5dp" />
+                    </shape>
+        <color android:color="@color/white" />
+    </item>
+</selector>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mediumLightGrey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/search_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <EditText
+            android:id="@+id/searchTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="textNoSuggestions"
+            android:paddingLeft="55dp"
+            android:paddingRight="55dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@drawable/color_cursor_white"
+            android:textSize="@dimen/text_medium" />
+
+        <ImageButton
+            android:id="@+id/action_up_btn"
+            style="@style/MSV_ImageButton"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_icn" />
+
+
+        <ImageButton
+            android:id="@+id/action_empty_btn"
+            style="@style/MSV_ImageButton"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/search_close_icn"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_result_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent" />
+
+    <com.ninexe.ui.widgets.AnyFontTextView
+        android:id="@+id/empty_view"
+        style="@style/Text.Small"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/mediumLightGrey"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="@string/msg_search_no_results"
+        android:visibility="gone"
+        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+</LinearLayout>

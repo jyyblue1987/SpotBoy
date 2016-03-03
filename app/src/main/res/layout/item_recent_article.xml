@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recent_article_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recent_article_thumbnail_height"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/recent_article_thumbnail_width"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1">
+
+        <com.ninexe.ui.widgets.AnyFontTextView
+            android:id="@+id/published_at"
+            style="@style/Text.Very.Small"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            custom:typefaceAsset="fonts/OpenSans-Light.ttf" />
+
+        <com.ninexe.ui.widgets.AnyFontTextView
+            android:id="@+id/title"
+            style="@style/Text.Small"
+            android:layout_above="@id/published_at"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:maxLines="2"
+            custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

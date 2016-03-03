@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.ninexe.ui.widgets.AnyFontTextView
+        android:id="@+id/article_question"
+        style="@style/Text.Medium"
+        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/comment_edit_text_bg">
+
+        <com.ninexe.ui.widgets.AnyFontEditText
+            android:id="@+id/edit_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="start"
+            android:inputType="textShortMessage|textMultiLine"
+            android:maxLength="@integer/comment_max_length"
+            android:minLines="3"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/color_cursor_white"
+            custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+        <com.ninexe.ui.widgets.AnyFontTextView
+            android:id="@+id/char_count"
+            style="@style/Text.Very.Small"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/edit_comment"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="5dp"
+            android:text="@integer/comment_max_length"
+            android:textColor="#5E6A80"
+            custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.ninexe.ui.widgets.AnyFontButtonView
+            android:id="@+id/btn_submit"
+            style="@style/ButtonWithBlueSolid"
+            android:layout_alignParentRight="true"
+            android:background="?attr/colorPrimary"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+
+        <com.ninexe.ui.widgets.AnyFontTextView
+            android:id="@+id/number_of_comments"
+            style="@style/Text.Small"
+            android:layout_alignBottom="@id/btn_submit"
+            android:textAllCaps="true"
+            custom:typefaceAsset="fonts/OpenSans-Light.ttf" />
+
+    </RelativeLayout>
+
+</LinearLayout>

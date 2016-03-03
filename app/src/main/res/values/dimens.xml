@@ -1,0 +1,60 @@
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<resources>
+
+    <!-- Font Size Text -->
+    <dimen name="text_very_large">28dp</dimen>
+    <dimen name="text_large">24dp</dimen>
+    <dimen name="text_medium">18dp</dimen>
+    <dimen name="text_small">14dp</dimen>
+    <dimen name="text_very_small">12dp</dimen>
+    <dimen name="text_very_very_small">8dp</dimen>
+
+    <!-- View Padding -->
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+
+    <!-- Article Detail-->
+    <dimen name="article_detail_video_thumbnail_height">220dp</dimen>
+    <dimen name="related_article_height">166dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="recent_article_container_height">94dp</dimen>
+    <dimen name="related_article_image_width">130dp</dimen>
+
+    <!-- Featured Article -->
+    <dimen name="featured_article_thumbnail_height">225dp</dimen>
+
+
+    <!--Recent Article-->
+    <dimen name="recent_article_thumbnail_height">94dp</dimen>
+    <dimen name="recent_article_thumbnail_width">120dp</dimen>
+
+    <!--Photo Gallery-->
+    <dimen name="photo_gallery_viewpager_width">300dp</dimen>
+    <dimen name="photo_gallery_viewpager_height">280dp</dimen>
+    <dimen name="photo_gallery_title_container_height">120dp</dimen>
+
+    <!-- Navigation Drawer Width-->
+    <item name="navigation_drawer_width" format="float" type="dimen">0.75</item>
+
+    <!-- Cover Flow-->
+    <dimen name="cover_width">170dp</dimen>
+    <dimen name="cover_height">150dp</dimen>
+
+    <!-- Toggle Button-->
+    <dimen name="btn_toggle_width">65dp</dimen>
+    <dimen name="btn_toggle_height">40dp</dimen>
+
+    <integer name="controlbar_vertical_padding">0</integer>
+
+
+</resources>

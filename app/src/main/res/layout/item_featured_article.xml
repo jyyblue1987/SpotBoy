@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/featured_article_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/featured_article_thumbnail_height"
+        android:scaleType="fitXY" />
+
+    <com.ninexe.ui.widgets.AnyFontTextView
+        android:id="@+id/title"
+        style="@style/Text.Large"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+    <com.ninexe.ui.widgets.AnyFontTextView
+        android:id="@+id/short_body"
+        style="@style/Text.Medium"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        custom:typefaceAsset="fonts/OpenSans-Light.ttf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <com.ninexe.ui.widgets.AnyFontTextView
+            android:id="@+id/author"
+            style="@style/Text.Very.Small"
+            custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                android:id="@+id/published_at"
+                style="@style/Text.Very.Small"
+                android:textColor="@color/time_text_blue"
+                custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+            <View style="@style/Article.Text.Divider.Vertical" />
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                android:id="@+id/views"
+                style="@style/Text.Very.Small"
+                android:drawableLeft="@drawable/no_of_views_icn"
+                android:drawablePadding="3dp"
+                android:gravity="center|center_vertical"
+                android:textColor="@color/yellow"
+                custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

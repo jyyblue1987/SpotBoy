@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<resources>
+    <declare-styleable name="AnyFontTextView">
+        <attr name="typefaceAsset" format="string"/>
+    </declare-styleable>
+</resources>

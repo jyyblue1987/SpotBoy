@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/reactometer_container_wow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_reactometer_wow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_react_wow" />
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                style="@style/Text.Very.Small"
+                android:padding="2dp"
+                android:text="@string/wow"
+                android:textAllCaps="true"
+                android:textColor="@color/sky_blue"
+                custom:typefaceAsset="fonts/OpenSans-Semibold.ttf" />
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                android:id="@+id/wowValue"
+                style="@style/Text.Very.Small"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reactometer_container_lol"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_reactometer_lol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_react_lol" />
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                style="@style/Text.Very.Small"
+                android:padding="2dp"
+                android:text="@string/lol"
+                android:textAllCaps="true"
+                android:textColor="@color/yellow"
+                custom:typefaceAsset="fonts/OpenSans-Semibold.ttf" />
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                android:id="@+id/lolValue"
+                style="@style/Text.Very.Small"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reactometer_container_wtf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_reactometer_wtf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_react_wtf" />
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                style="@style/Text.Very.Small"
+                android:padding="2dp"
+                android:text="@string/wtf"
+                android:textAllCaps="true"
+                android:textColor="@color/light_red"
+                custom:typefaceAsset="fonts/OpenSans-Semibold.ttf" />
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                android:id="@+id/wtfValue"
+                style="@style/Text.Very.Small"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reactometer_container_omg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_reactometer_omg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_react_omg" />
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                style="@style/Text.Very.Small"
+                android:padding="2dp"
+                android:text="@string/omg"
+                android:textAllCaps="true"
+                android:textColor="@color/light_green"
+                custom:typefaceAsset="fonts/OpenSans-Semibold.ttf" />
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                android:id="@+id/omgValue"
+                style="@style/Text.Very.Small"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/share_icn_normal" />
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                style="@style/Text.Very.Small"
+                android:padding="2dp"
+                android:text="Share"
+                android:textAllCaps="true"
+                android:textColor="#858585"
+                custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

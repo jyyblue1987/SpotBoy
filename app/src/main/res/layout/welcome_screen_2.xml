@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_background_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/dark_blue_rounded_corner_rectangle"
+            android:paddingBottom="20dp"
+            android:paddingTop="@dimen/padding_10">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="15dp"
+                android:paddingRight="8dp"
+                android:src="@drawable/welcome_screen_logo" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_centerHorizontal="true"
+                android:fadeScrollbars="false"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbarThumbVertical="@drawable/scrollbar_white"
+                android:scrollbars="vertical">
+
+                <com.ninexe.ui.widgets.AnyFontTextView
+                    style="@style/Text.Medium"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="@string/welcome_screen_2_text"
+                    custom:typefaceAsset="fonts/Montserrat-Regular.otf" />
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/lets_get_started_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                android:id="@+id/lets_get_started"
+                style="@style/Text.Medium"
+                android:padding="10dp"
+                android:text="@string/lets_get_started"
+                custom:typefaceAsset="fonts/Montserrat-Regular.otf" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/lets_get_started"
+                android:padding="2dp"
+                android:scaleX="-1"
+                android:src="@drawable/back_icn" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

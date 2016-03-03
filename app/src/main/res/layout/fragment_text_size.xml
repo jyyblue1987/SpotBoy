@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_dark_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/settings_light_grey"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <com.ninexe.ui.widgets.AnyFontTextView
+            style="@style/Text.Medium"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/title_text_size"
+            android:textColor="#7B8DB0"
+            custom:typefaceAsset="fonts/OpenSans-Bold.ttf" />
+
+        <com.ninexe.ui.widgets.AnyFontTextView
+            style="@style/Text.Very.Small"
+            android:text="@string/select_text_size"
+            android:textColor="#7B8DB0"
+            custom:typefaceAsset="fonts/OpenSans-Light.ttf" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/background_text_size"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <com.ninexe.ui.widgets.AnyFontButtonView
+            android:id="@+id/text_size_very_small"
+            style="@style/Text.TextSize"
+            android:textSize="12sp"
+            custom:typefaceAsset="fonts/OpenSans-Bold.ttf" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EEE2CB" />
+
+        <com.ninexe.ui.widgets.AnyFontButtonView
+            android:id="@+id/text_size_small"
+            style="@style/Text.TextSize"
+            android:textSize="16sp"
+            custom:typefaceAsset="fonts/OpenSans-Bold.ttf" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EEE2CB" />
+
+        <com.ninexe.ui.widgets.AnyFontButtonView
+            android:id="@+id/text_size_medium"
+            style="@style/Text.TextSize"
+            android:textSize="20sp"
+            custom:typefaceAsset="fonts/OpenSans-Bold.ttf" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EEE2CB" />
+
+
+        <com.ninexe.ui.widgets.AnyFontButtonView
+            android:id="@+id/text_size_large"
+            style="@style/Text.TextSize"
+            android:textSize="24sp"
+            custom:typefaceAsset="fonts/OpenSans-Bold.ttf" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EEE2CB" />
+
+        <com.ninexe.ui.widgets.AnyFontButtonView
+            android:id="@+id/text_size_very_large"
+            style="@style/Text.TextSize"
+            android:textSize="28sp"
+            custom:typefaceAsset="fonts/OpenSans-Bold.ttf" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

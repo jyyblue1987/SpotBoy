@@ -1,0 +1,1 @@
+include ':app', ':coverflow_lib', ':jwplayer-android-sdk-1.3.116'

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/retry_frame_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mediumLightGrey"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <com.ninexe.ui.widgets.AnyFontTextView
+        android:id="@+id/message"
+        style="@style/Text.Medium"
+        android:gravity="center"
+        android:textColor="@color/white"
+        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+    <com.ninexe.ui.widgets.AnyFontButtonView
+        android:id="@+id/btn_retry"
+        style="@style/ButtonWithBlueSolid"
+        android:background="?attr/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:text="@string/retry" />
+
+</LinearLayout>

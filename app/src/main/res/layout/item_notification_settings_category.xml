@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <com.ninexe.ui.widgets.AnyFontTextView
+        style="@style/Text.Medium"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Notification Category"
+        android:textColor="#7B8DB0"
+        custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+
+    <com.ninexe.ui.widgets.AnyFontTextView
+        style="@style/Text.Very.Small"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Select categories for which you would like receive notifications"
+        android:textColor="#B6BFEB"
+        custom:typefaceAsset="fonts/OpenSans-Light.ttf" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#B6BFEB" />
+
+</LinearLayout>

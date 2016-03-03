@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, 9x Media Pvt. Ltd.
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mediumLightGrey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.85">
+
+<!--            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/tab_section_swipe_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/tab_section_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tab_section_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <com.ninexe.ui.widgets.AnyFontTextView
+                style="@style/Text.Medium"
+                android:text="Ads Coming Soon ..."
+                custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.ninexe.ui.widgets.AnyFontTextView
+            style="@style/Text.Medium"
+            android:text="Articles Coming Soon ..."
+            custom:typefaceAsset="fonts/OpenSans-Regular.ttf" />
+    </LinearLayout>
+
+
+</LinearLayout>
